@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Facebook</title>
+
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- boxicon  -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- slider -->
+    <script src="js/script.js" defer></script>
+
+    <!-- bootstrap  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- header  -->
+    <div class="container-fluid position-fixed" style="z-index: 100">
+      <div class="row bg-white">
+        <div class="col d-flex justify-content-start align-items-center gap-2">
+          <i class="bx bxl-facebook-circle" style="color: #0866ff"></i>
+          <input
+            type="text"
+            placeholder="Search Facebook"
+            id="k"
+            list="sea"
+            class="d-none d-xl-flex"
+          />
+          <!-- d-lg-flex -->
+          <datalist id="sea">
+            <option value="Dr.Nushad"></option>
+            <option value="Dr.Amir"></option>
+            <option value="Dr.Dabeer "></option>
+            <option value="Dr.Razzaq"></option>
+            <option value="Dr.MAhnoor"></option>
+            <option value="Dr.Aisha"></option>
+            <option value="Dr.Priya"></option></datalist
+          ><br />
+
+          <div class="dropdown d-xl-none">
+            <i
+              class="bx bx-search-alt-2"
+              style="
+                color: #65676b;
+                font-size: 20px;
+                background-color: #f0f2f5;
+                border-radius: 50%;
+                padding: 8px;
+              "
+              onclick="myFunction()"
+              class="dropbtn info"
+            ></i>
+            <div id="myDropdown" class="dropdown-content">
+              <input
+                type="text"
+                placeholder="Search.."
+                id="myInput"
+                onkeyup="filterFunction()"
+              />
+              <a href="#about">About</a>
+              <a href="#base">Base</a>
+              <a href="#blog">Blog</a>
+              <a href="#contact">Contact</a>
+              <a href="#custom">Custom</a>
+              <a href="#support">Support</a>
+              <a href="#tools">Tools</a>
+            </div>
+          </div>
+
+          <i
+            class="bx bx-menu d-md-none"
+            style="
+              color: #65676b;
+              font-size: 20px;
+              background-color: #f0f2f5;
+              padding: 8px;
+              border-radius: 50%;
+            "
+          ></i>
+        </div>
+
+        <div
+          class="col edit2 d-none justify-content-center align-items-center gap-5 d-md-flex"
+        >
+          <i class="bx bx-home-alt mx-2" style="color: #65676b"></i>
+          <i class="bx bx-user mx-2" style="color: #65676b"></i>
+          <i class="bx bxs-videos mx-2" style="color: #65676b"></i>
+          <i class="bx bx-store-alt mx-2" style="color: #65676b"></i>
+          <i class="bx bx-group mx-2" style="color: #65676b"></i>
+        </div>
+
+        <div class="col edit3 d-flex justify-content-end align-items-center">
+          <i class="bx bxs-grid" style="color: #000000"></i>
+
+          <button
+            type="button"
+            class="btn rounded-circle position-relative"
+            style="margin-right: -50px"
+          >
+            <i class="bx bxl-messenger" style="color: #000000"></i>
+            <span
+              class="translate-middle badge rounded-pill"
+              style="position: relative; top: -15px; right: 15px"
+            >
+              9
+            </span>
+          </button>
+          <button
+            type="button"
+            class="btn rounded-circle position-relative"
+            style="margin-right: -35px"
+          >
+            <i class="bx bx-bell"></i>
+            <span
+              class="translate-middle badge rounded-pill"
+              style="position: relative; top: -15px; right: 15px"
+            >
+              5
+            </span>
+          </button>
+
+          <div class="dropdown text-decoration-none">
+            <img
+              class="rounded-circle header-profile-pic"
+              src="img/afzal.png"
+              alt=""
+              class="dropdown-toggle"
+              href="#"
+              role="button"
+              id="dropdownMenuLink"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            />
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2nd section   -->
+
+    <div class="container-fluid" style="position: relative; top: 70px">
+      <div class="row" style="overflow-x: hidden">
+        <!-- left side bar  -->
+        <div
+          class="col d-none justify-content-start d-lg-flex"
+          style="margin-left: -20px; z-index: 100"
+        >
+          <div
+            class="col d-flex flex-column justify-content-start position-fixed p-3 h-100 gap-3 overflow-auto"
+            style="width: 300px; margin-top: -10px"
+          >
+            <div
+              class="leftside-bar d-flex align-items-center justify-content-start gap-3"
+            >
+              <img
+                src="img/afzal.png"
+                width="35px"
+                height="35px"
+                class="rounded-circle"
+                alt=""
+              />
+              <h6 class="mt-2">Muhammad Afzal</h6>
+            </div>
+
+            <div
+              class="leftside-bar d-flex align-items-center justify-content-start gap-3"
+            >
+              <img
+                src="https://static.xx.fbcdn.net/rsrc.php/v3/yr/r/AS1whyaTgJ0.png?_nc_eui2=AeHQn2TE1nxdTxaugM7IqU9ukqrMkZALfkGSqsyRkAt-QW5TfRMAQYWYBrnWDvb8aN3LXgf6zwCgWzygqN1ohHbJ"
+                width="35px"
+                height="35px"
+                class="rounded-circle"
+                alt=""
+              />
+              <h6 class="mt-2">Friends</h6>
+            </div>
+
+            <div
+              class="leftside-bar d-flex align-items-center justify-content-start gap-3"
+            >
+              <img
+                src="https://static.xx.fbcdn.net/rsrc.php/v3/yv/r/S22e07q-b6a.png?_nc_eui2=AeENmWCS9GFDOYnFZyraWPY2g7BlcuUImyiDsGVy5QibKDMZ32KIOOSFz-Pe0af7dyLgkm78etbjiBhvdUVbOiMU"
+                width="35px"
+                height="35px"
+                class="rounded-circle"
+                alt=""
+              />
+              <h6 class="mt-2">Memories</h6>
+            </div>
+
+            <div
+              class="leftside-bar d-flex align-items-center justify-content-start gap-3"
+            >
+              <img
+                src="https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/lH756t0xaFS.png?_nc_eui2=AeHyz5eo8s4QjnL8wniKsqtIXRdnGgMcrLNdF2caAxyss2NdqtzEkMx6m4YNQOLw6cVr_NY2gkmFNTRWtwW5U9Pj"
+                width="35px"
+                height="35px"
+                class="rounded-circle"
+                alt=""
+              />
+              <h6 class="mt-2">Groups</h6>
+            </div>
+
+            <div
+              class="leftside-bar d-flex align-items-center justify-content-start gap-3"
+            >
+              <img
+                src="https://static.xx.fbcdn.net/rsrc.php/v3/yR/r/7D2zQ81qTub.png?_nc_eui2=AeHTCGpOBLxCz7yiZDzAma363s_CDntj-8vez8IOe2P7y_ipxT6laYvRaOJs46Dfj2UjEB1brsYWYXfb6QMjuVR2"
+                width="35px"
+                height="35px"
+                class="rounded-circle"
+                alt=""
+              />
+              <h6 class="mt-2">Videos</h6>
+            </div>
+
+            <div
+              class="leftside-bar d-flex align-items-center justify-content-start gap-3"
+            >
+              <img
+                src="https://static.xx.fbcdn.net/rsrc.php/v3/yT/r/Wo1bvqdMJGR.png?_nc_eui2=AeH17xxnqDC5nAbuuWJYDpO3X2xgupFPochfbGC6kU-hyJ8H3J8aRXq10DxTJzATXdsggdTqVdZZaCrGfzNA1pVs"
+                width="35px"
+                height="35px"
+                class="rounded-circle"
+                alt=""
+              />
+              <h6 class="mt-2">Messenger</h6>
+            </div>
+
+            <div
+              class="leftside-bar d-flex align-items-center justify-content-start gap-3"
+            >
+              <img
+                src="https://static.xx.fbcdn.net/rsrc.php/v3/yw/r/upVxS0XRdQc.png?_nc_eui2=AeFlnLEav7SVwyRJNALgOKhfSTYaxtguM9ZJNhrG2C4z1lEw-YPs9SeSiM5GtU665BNEYC51nrwSy8LAmTuCACIK"
+                width="35px"
+                height="35px"
+                class="rounded-circle"
+                alt=""
+              />
+              <h6 class="mt-2">Games</h6>
+            </div>
+
+            <div
+              class="leftside-bar d-flex align-items-center justify-content-start gap-3"
+            >
+              <img
+                src="https://static.xx.fbcdn.net/rsrc.php/v3/yE/r/ZGhGO4uu9Ph.png?_nc_eui2=AeFWN7wz8zQWMIlVNkZjFZuHaH1X2IoUTHRofVfYihRMdAPczRO8Seg2xlhgkcJmJ45g4QIhY8t09RXciAT6Utgh"
+                width="35px"
+                height="35px"
+                class="rounded-circle"
+                alt=""
+              />
+              <h6 class="mt-2">Saved</h6>
+            </div>
+
+            <div
+              class="leftside-bar d-flex align-items-center justify-content-start gap-3"
+            >
+              <img
+                src="https://static.xx.fbcdn.net/rsrc.php/v3/yg/r/gEToCPgGXKf.png?_nc_eui2=AeEFMFWtw6xNxFXDBGcKQvAFw6ZCdQfHLb_DpkJ1B8ctv_ptSipJtk8xNCGWKsD3i3Fa69gMemiqdLa23NHzY7ap"
+                width="35px"
+                height="35px"
+                class="rounded-circle"
+                alt=""
+              />
+              <h6 class="mt-2">Marketplace</h6>
+            </div>
+
+            <h4>Your Shortcuts</h4>
+            <div
+              class="leftside-bar d-flex align-items-center justify-content-start gap-3"
+            >
+              <img
+                src="img/meme1.jpg"
+                width="35px"
+                height="35px"
+                class="rounded-3"
+                alt=""
+              />
+              <h6 class="mt-2">University Meme</h6>
+            </div>
+
+            <div
+              class="leftside-bar d-flex align-items-center justify-content-start gap-3"
+            >
+              <img
+                src="img/mems.jpg"
+                width="35px"
+                height="35px"
+                class="rounded-3"
+                alt=""
+              />
+              <h6 class="mt-2">Memes</h6>
+            </div>
+            <div
+              class="leftside-bar d-flex align-items-center justify-content-start gap-3"
+            >
+              <img
+                src="img/pcb.png"
+                width="35px"
+                height="35px"
+                class="rounded-3"
+                alt=""
+              />
+              <h6 class="mt-2">Pakistan Cricket Board</h6>
+            </div>
+            <div
+              class="leftside-bar d-flex align-items-center justify-content-start gap-3"
+            >
+              <img
+                src="img/pcb1.jpg"
+                width="35px"
+                height="35px"
+                class="rounded-3"
+                alt=""
+              />
+              <h6 class="mt-2">Pakistan Cricket Sarcasm</h6>
+            </div>
+            <div
+              class="leftside-bar d-flex align-items-center justify-content-start gap-3"
+            >
+              <img
+                src="img/engineer.jpg"
+                width="35px"
+                height="35px"
+                class="rounded-3"
+                alt=""
+              />
+              <h6 class="mt-2">
+                Engineer Muhammad Ali Mirza - Complete Lecture
+              </h6>
+            </div>
+            <div
+              class="leftside-bar d-flex align-items-center justify-content-start gap-3"
+            >
+              <img
+                src="img/jeo.jpg"
+                width="35px"
+                height="35px"
+                class="rounded-3"
+                alt=""
+              />
+              <h6 class="mt-2">Jeo News</h6>
+            </div>
+            <div
+              class="leftside-bar d-flex align-items-center justify-content-start gap-3"
+            >
+              <img
+                src="img/fast.jpg"
+                width="35px"
+                height="35px"
+                class="rounded-3"
+                alt=""
+              />
+              <h6 class="mt-2">FAST-National University Karachi Campus</h6>
+            </div>
+
+            <p>
+              Privacy · Terms · Advertising · Ad Choices · Cookies · Developed
+              by Afzal · Meta © 2024 <br /><br /><br /><br /><br />
+            </p>
+          </div>
+        </div>
+
+        <!-- slider  -->
+        <div
+          class="col d-flex flex-column justify-content-center align-items-center  "
+        >
+          <!-- slider  -->
+          <div class="container-slider">
+            <img
+              src="img/arrow_left.svg"
+              alt="ArrowLeft"
+              width="128"
+              height="128"
+              id="ArrowLeft"
+            />
+            <div class="slider">
+              <div id="img-list">
+                <!-- create story  -->
+                <div
+                  class="image-inside first-img"
+                  style="
+                    background: url(img/me.jpg) no-repeat center center;
+                    background-size: cover;
+                  "
+                >
+                  <div class="plus">
+                    <i class="bx bxs-plus-circle" style="color: #0996f9"></i>
+                    <p>Create Story</p>
+                  </div>
+                </div>
+
+                <!-- status  -->
+
+                <div
+                  class="image-inside"
+                  style="
+                    background: url(img/me.jpg) no-repeat center center;
+                    background-size: cover;
+                  "
+                >
+                  <div class="profile">
+                    <img src="img/Screenshot_1.png" alt="" />
+                  </div>
+                  <!--profile pic--->
+                  <p class="text">Muhammad Afzal</p>
+                  <!--person story name--->
+                </div>
+
+                <div
+                  class="image-inside"
+                  style="
+                    background: url(img/me.jpg) no-repeat center center;
+                    background-size: cover;
+                  "
+                >
+                  <div class="profile">
+                    <img src="img/Screenshot_1.png" alt="" />
+                  </div>
+                  <!--profile pic--->
+                  <p class="text">Muhammad Afzal</p>
+                  <!--person story name--->
+                </div>
+
+                <div
+                  class="image-inside"
+                  style="
+                    background: url(img/me.jpg) no-repeat center center;
+                    background-size: cover;
+                  "
+                >
+                  <div class="profile">
+                    <img src="img/Screenshot_1.png" alt="" />
+                  </div>
+                  <!--profile pic--->
+                  <p class="text">Muhammad Afzal</p>
+                  <!--person story name--->
+                </div>
+              </div>
+            </div>
+            <img
+              src="img/arrow_right.svg"
+              alt="ArrowRight"
+              width="128"
+              height="128"
+              id="ArrowRight"
+            />
+          </div>
+
+          <div class="container">
+            <div class="row bg-white p-1 shadow rounded-3">
+              <div class="col dfs my-3">
+                <img
+                  src="img/afzal.png"
+                  width="40px"
+                  height="40px"
+                  class="rounded-circle"
+                  alt=""
+                />
+                <input
+                  type="text"
+                  placeholder="Whats on Your Mind,Afzal....?"
+                  class="mx-3"
+                />
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-md-4 col-sm-12 icon dfc">
+                  <img src="img/video.png" alt="" />
+                  <h6 class="mx-1">Live</h6>
+                </div>
+                <div class="col-md-4 col-sm-12 icon dfc">
+                  <img src="img/image.png" alt="" />
+                  <h6 class="mx-1">Photo/Video</h6>
+                </div>
+                <div class="col-md-4 col-sm-12 icon dfc">
+                  <img src="img/emoji.png" alt="" />
+                  <h6 class="mx-1">Feeling/Activity</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- post started -->
+		  <!-- 1 -->
+          <div class="container">
+            <div class="row bg-white my-3 rounded-3 shadow d-flex flex-column">
+              <!-- header of post  -->
+              <div class="col dfb m">
+                <div class="d-flex">
+                  <img src="img/afzal.png " class="img-circle" alt="" />
+                  <p class="mx-3">
+                    <b>channel name</b> .
+                    <a href="" class="text-primary">Follow</a
+                    ><br /><!--name . -->
+                    time . <i class="bx bx-world" style="color: #606266"></i>
+                  </p>
+                </div>
+                <div>
+                  <i
+                    class="bx bx-dots-horizontal-rounded icon1"
+                    style="color: #606266"
+                  ></i>
+                  <i class="bx bx-x icon1" style="color: #606266"></i>
+                </div>
+              </div>
+              <!-- post  -->
+              <div class="col p-2">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloribus sunt veritatis laboriosam repudiandae vero eaque,
+                  obcaecati mollitia quaerat, nisi amet ut necessitatibus qui
+                  quibusdam repellendus soluta consequuntur ipsam odio modi!
+                </p>
+              </div>
+
+              <div class="col" style="margin-top: -20px">
+                <div class="dfb">
+                  <div class="btn-group dropup">
+                    <img
+                      src="img/like.png"
+                      class="img-react dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    />
+                    <img
+                      src="img/laugh.png"
+                      style="margin: 0px -3px"
+                      class="img-react dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    />
+                    <img
+                      src="img/heart.png"
+                      class="img-react dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    />
+
+                    <ul
+                      class="dropdown-menu text-center bg-dark text-white-50 text-capitalize"
+                    >
+                      <li>Muhammad Afzal</li>
+                      <li>Muhammad Ali</li>
+                      <li>Chahat fateh ali khan</li>
+                      <li>mr.bean</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p>
+                      <a class="text-decoration-none text-black-50" href=""
+                        >number comment</a
+                      >
+                      <a class="text-decoration-none text-black-50" href=""
+                        >number shares</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <hr style="margin-top: -5px" />
+                <div class="icon dfc gap-4 position-relative">
+                  <div class="like-hover dfc">
+                    <i class="bx bx-like" style="color: #7c7e83"></i
+                    ><span class="text-black-50">like</span>
+                  </div>
+                  <div class="emoji bg-white border-0 rounded-pill">
+                    <iframe
+                      src="https://lottie.host/embed/8ea6d891-5054-437a-a3f0-ddeeac4025f8/p6QNLfouQt.json"
+                      style="margin-right: -20px"
+                      width="80px"
+                      height="80px"
+                    ></iframe>
+                    <iframe
+                      src="https://lottie.host/embed/ad52a6eb-e4ea-4ad5-a1f5-a24942f2fe0e/sPLF1vBVeN.json"
+                      width="70px"
+                      height="70px"
+                    ></iframe>
+                    <iframe
+                      src="https://lottie.host/embed/85f850b9-c7c5-4f18-9c37-8ba5286a77ef/7aXOuaVR67.json"
+                      width="45px"
+                      height="45px"
+                    ></iframe>
+                    <iframe
+                      src="https://lottie.host/embed/fb96d67f-d68d-4cad-a320-e595ce68ad82/2BxmyH0xkl.json"
+                      style="margin-left: 5px"
+                      width="55px"
+                      height="55px"
+                    ></iframe>
+                    <iframe
+                      src="https://lottie.host/embed/f67cca31-b79e-47c1-a985-576a65413dec/qEWBg8bJY9.json"
+                      style="
+                        margin-top: -20px;
+                        margin-right: -40px;
+                        margin-left: -20px;
+                      "
+                      width="80px"
+                      height="80px"
+                    ></iframe>
+                    <iframe
+                      src="https://lottie.host/embed/ea224abd-9c08-4d3d-8285-03ca16bbecf6/YoNa2hfAIq.json"
+                      width="90px"
+                      height="90px"
+                    ></iframe>
+                  </div>
+                  <div class="dfc">
+                    <i class="bx bx-comment" style="color: #7c7e83"></i
+                    ><span class="text-black-50">comment</span>
+                  </div>
+                  <div class="dfc">
+                    <i class="bx bxl-whatsapp" style="color: #7c7e83"></i
+                    ><span class="text-black-50">send</span>
+                  </div>
+                  <div class="dfc">
+                    <i class="bx bx-share-alt" style="color: #7c7e83"></i
+                    ><span class="text-black-50">share</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+		  <!-- 2 -->
+
+          <div class="container">
+            <div class="row bg-white my-3 rounded-3 shadow d-flex flex-column">
+              <!-- header of post  -->
+              <div class="col dfb m">
+                <div class="d-flex">
+                  <img src="img/afzal.png " class="img-circle" alt="" />
+                  <p class="mx-3">
+                    <b>channel name</b> .
+                    <a href="" class="text-primary">Follow</a
+                    ><br /><!--name . -->
+                    time . <i class="bx bx-world" style="color: #606266"></i>
+                  </p>
+                </div>
+                <div>
+                  <i
+                    class="bx bx-dots-horizontal-rounded icon1"
+                    style="color: #606266"
+                  ></i>
+                  <i class="bx bx-x icon1" style="color: #606266"></i>
+                </div>
+              </div>
+              <!-- post  -->
+              <div class="col p-2 dfc mb-4">
+                <img src="img/afzal.png" width="300px" height="300px" alt="" />
+                <!-- <video src="" width="300px " height="300px"></video> -->
+              </div>
+
+              <div class="col" style="margin-top: -20px">
+                <div class="dfb">
+                  <div class="btn-group dropup">
+                    <img
+                      src="img/like.png"
+                      class="img-react dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    />
+                    <img
+                      src="img/laugh.png"
+                      style="margin: 0px -3px"
+                      class="img-react dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    />
+                    <img
+                      src="img/heart.png"
+                      class="img-react dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    />
+
+                    <ul
+                      class="dropdown-menu text-center bg-dark text-white-50 text-capitalize"
+                    >
+                      <li>Muhammad Afzal</li>
+                      <li>Muhammad Ali</li>
+                      <li>Chahat fateh ali khan</li>
+                      <li>mr.bean</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p>
+                      <a class="text-decoration-none text-black-50" href=""
+                        >number comment</a
+                      >
+                      <a class="text-decoration-none text-black-50" href=""
+                        >number shares</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <hr style="margin-top: -5px" />
+                <div class="icon dfc gap-4 position-relative">
+                  <div class="like-hover dfc">
+                    <i class="bx bx-like" style="color: #7c7e83"></i
+                    ><span class="text-black-50">like</span>
+                  </div>
+                  <div class="emoji bg-white border-0 rounded-pill">
+                    <iframe
+                      src="https://lottie.host/embed/8ea6d891-5054-437a-a3f0-ddeeac4025f8/p6QNLfouQt.json"
+                      style="margin-right: -20px"
+                      width="80px"
+                      height="80px"
+                    ></iframe>
+                    <iframe
+                      src="https://lottie.host/embed/ad52a6eb-e4ea-4ad5-a1f5-a24942f2fe0e/sPLF1vBVeN.json"
+                      width="70px"
+                      height="70px"
+                    ></iframe>
+                    <iframe
+                      src="https://lottie.host/embed/85f850b9-c7c5-4f18-9c37-8ba5286a77ef/7aXOuaVR67.json"
+                      width="45px"
+                      height="45px"
+                    ></iframe>
+                    <iframe
+                      src="https://lottie.host/embed/fb96d67f-d68d-4cad-a320-e595ce68ad82/2BxmyH0xkl.json"
+                      style="margin-left: 5px"
+                      width="55px"
+                      height="55px"
+                    ></iframe>
+                    <iframe
+                      src="https://lottie.host/embed/f67cca31-b79e-47c1-a985-576a65413dec/qEWBg8bJY9.json"
+                      style="
+                        margin-top: -20px;
+                        margin-right: -40px;
+                        margin-left: -20px;
+                      "
+                      width="80px"
+                      height="80px"
+                    ></iframe>
+                    <iframe
+                      src="https://lottie.host/embed/ea224abd-9c08-4d3d-8285-03ca16bbecf6/YoNa2hfAIq.json"
+                      width="90px"
+                      height="90px"
+                    ></iframe>
+                  </div>
+                  <div class="dfc">
+                    <i class="bx bx-comment" style="color: #7c7e83"></i
+                    ><span class="text-black-50">comment</span>
+                  </div>
+                  <div class="dfc">
+                    <i class="bx bxl-whatsapp" style="color: #7c7e83"></i
+                    ><span class="text-black-50">send</span>
+                  </div>
+                  <div class="dfc">
+                    <i class="bx bx-share-alt" style="color: #7c7e83"></i
+                    ><span class="text-black-50">share</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+		  <!-- 3 -->
+
+          <div class="container">
+            <div class="row bg-white my-3 rounded-3 shadow d-flex flex-column">
+              <!-- header of post  -->
+              <div class="col dfb m">
+                <div class="d-flex">
+                  <img src="img/afzal.png " class="img-circle" alt="" />
+                  <p class="mx-3">
+                    <b>channel name</b> .
+                    <a href="" class="text-primary">Follow</a
+                    ><br /><!--name . -->
+                    time . <i class="bx bx-world" style="color: #606266"></i>
+                  </p>
+                </div>
+                <div>
+                  <i
+                    class="bx bx-dots-horizontal-rounded icon1"
+                    style="color: #606266"
+                  ></i>
+                  <i class="bx bx-x icon1" style="color: #606266"></i>
+                </div>
+              </div>
+              <!-- post  -->
+              <div class="col p-2 dfc mb-4">
+                
+                <video src="video/Iraaday -- kaisa sama hain hum tum yaha hain -- lyrics -- what's app status song.mp4" controls width="300px " height="300px"></video>
+              </div>
+
+              <div class="col" style="margin-top: -20px">
+                <div class="dfb">
+                  <div class="btn-group dropup">
+                    <img
+                      src="img/like.png"
+                      class="img-react dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    />
+                    <img
+                      src="img/laugh.png"
+                      style="margin: 0px -3px"
+                      class="img-react dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    />
+                    <img
+                      src="img/heart.png"
+                      class="img-react dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    />
+
+                    <ul
+                      class="dropdown-menu text-center bg-dark text-white-50 text-capitalize"
+                    >
+                      <li>Muhammad Afzal</li>
+                      <li>Muhammad Ali</li>
+                      <li>Chahat fateh ali khan</li>
+                      <li>mr.bean</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p>
+                      <a class="text-decoration-none text-black-50" href=""
+                        >number comment</a
+                      >
+                      <a class="text-decoration-none text-black-50" href=""
+                        >number shares</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <hr style="margin-top: -5px" />
+                <div class="icon dfc gap-4 position-relative">
+                  <div class="like-hover dfc">
+                    <i class="bx bx-like" style="color: #7c7e83"></i
+                    ><span class="text-black-50">like</span>
+                  </div>
+                  <div class="emoji bg-white border-0 rounded-pill">
+                    <iframe
+                      src="https://lottie.host/embed/8ea6d891-5054-437a-a3f0-ddeeac4025f8/p6QNLfouQt.json"
+                      style="margin-right: -20px"
+                      width="80px"
+                      height="80px"
+                    ></iframe>
+                    <iframe
+                      src="https://lottie.host/embed/ad52a6eb-e4ea-4ad5-a1f5-a24942f2fe0e/sPLF1vBVeN.json"
+                      width="70px"
+                      height="70px"
+                    ></iframe>
+                    <iframe
+                      src="https://lottie.host/embed/85f850b9-c7c5-4f18-9c37-8ba5286a77ef/7aXOuaVR67.json"
+                      width="45px"
+                      height="45px"
+                    ></iframe>
+                    <iframe
+                      src="https://lottie.host/embed/fb96d67f-d68d-4cad-a320-e595ce68ad82/2BxmyH0xkl.json"
+                      style="margin-left: 5px"
+                      width="55px"
+                      height="55px"
+                    ></iframe>
+                    <iframe
+                      src="https://lottie.host/embed/f67cca31-b79e-47c1-a985-576a65413dec/qEWBg8bJY9.json"
+                      style="
+                        margin-top: -20px;
+                        margin-right: -40px;
+                        margin-left: -20px;
+                      "
+                      width="80px"
+                      height="80px"
+                    ></iframe>
+                    <iframe
+                      src="https://lottie.host/embed/ea224abd-9c08-4d3d-8285-03ca16bbecf6/YoNa2hfAIq.json"
+                      width="90px"
+                      height="90px"
+                    ></iframe>
+                  </div>
+                  <div class="dfc">
+                    <i class="bx bx-comment" style="color: #7c7e83"></i
+                    ><span class="text-black-50">comment</span>
+                  </div>
+                  <div class="dfc">
+                    <i class="bx bxl-whatsapp" style="color: #7c7e83"></i
+                    ><span class="text-black-50">send</span>
+                  </div>
+                  <div class="dfc">
+                    <i class="bx bx-share-alt" style="color: #7c7e83"></i
+                    ><span class="text-black-50">share</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+		  <!-- 4 -->
+
+
+		  <div class="container">
+            <div class="row bg-white my-3 rounded-3 shadow d-flex flex-column">
+              <!-- header of post  -->
+              <div class="col dfb m">
+                <div class="d-flex">
+                  <img src="img/afzal.png " class="img-circle" alt="" />
+                  <p class="mx-3">
+                    <b>channel name</b> .
+                    <a href="" class="text-primary">Follow</a
+                    ><br /><!--name . -->
+                    time . <i class="bx bx-world" style="color: #606266"></i>
+                  </p>
+                </div>
+                <div>
+                  <i
+                    class="bx bx-dots-horizontal-rounded icon1"
+                    style="color: #606266"
+                  ></i>
+                  <i class="bx bx-x icon1" style="color: #606266"></i>
+                </div>
+              </div>
+              <!-- post  -->
+              <div class="col p-2 dfc mb-4">
+                <img src="img/me.jpg" alt=""  style="width: 300px; height: 300px; object-fit: cover;">
+                <!-- <video src="" width="300px " height="300px"></video> -->
+              </div>
+
+              <div class="col" style="margin-top: -20px">
+                <div class="dfb">
+                  <div class="btn-group dropup">
+                    <img
+                      src="img/like.png"
+                      class="img-react dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    />
+                    <img
+                      src="img/laugh.png"
+                      style="margin: 0px -3px"
+                      class="img-react dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    />
+                    <img
+                      src="img/heart.png"
+                      class="img-react dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    />
+
+                    <ul
+                      class="dropdown-menu text-center bg-dark text-white-50 text-capitalize"
+                    >
+                      <li>Muhammad Afzal</li>
+                      <li>Muhammad Ali</li>
+                      <li>Chahat fateh ali khan</li>
+                      <li>mr.bean</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p>
+                      <a class="text-decoration-none text-black-50" href=""
+                        >number comment</a
+                      >
+                      <a class="text-decoration-none text-black-50" href=""
+                        >number shares</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <hr style="margin-top: -5px" />
+                <div class="icon dfc gap-4 position-relative">
+                  <div class="like-hover dfc">
+                    <i class="bx bx-like" style="color: #7c7e83"></i
+                    ><span class="text-black-50">like</span>
+                  </div>
+                  <div class="emoji bg-white border-0 rounded-pill">
+                    <iframe
+                      src="https://lottie.host/embed/8ea6d891-5054-437a-a3f0-ddeeac4025f8/p6QNLfouQt.json"
+                      style="margin-right: -20px"
+                      width="80px"
+                      height="80px"
+                    ></iframe>
+                    <iframe
+                      src="https://lottie.host/embed/ad52a6eb-e4ea-4ad5-a1f5-a24942f2fe0e/sPLF1vBVeN.json"
+                      width="70px"
+                      height="70px"
+                    ></iframe>
+                    <iframe
+                      src="https://lottie.host/embed/85f850b9-c7c5-4f18-9c37-8ba5286a77ef/7aXOuaVR67.json"
+                      width="45px"
+                      height="45px"
+                    ></iframe>
+                    <iframe
+                      src="https://lottie.host/embed/fb96d67f-d68d-4cad-a320-e595ce68ad82/2BxmyH0xkl.json"
+                      style="margin-left: 5px"
+                      width="55px"
+                      height="55px"
+                    ></iframe>
+                    <iframe
+                      src="https://lottie.host/embed/f67cca31-b79e-47c1-a985-576a65413dec/qEWBg8bJY9.json"
+                      style="
+                        margin-top: -20px;
+                        margin-right: -40px;
+                        margin-left: -20px;
+                      "
+                      width="80px"
+                      height="80px"
+                    ></iframe>
+                    <iframe
+                      src="https://lottie.host/embed/ea224abd-9c08-4d3d-8285-03ca16bbecf6/YoNa2hfAIq.json"
+                      width="90px"
+                      height="90px"
+                    ></iframe>
+                  </div>
+                  <div class="dfc">
+                    <i class="bx bx-comment" style="color: #7c7e83"></i
+                    ><span class="text-black-50">comment</span>
+                  </div>
+                  <div class="dfc">
+                    <i class="bx bxl-whatsapp" style="color: #7c7e83"></i
+                    ><span class="text-black-50">send</span>
+                  </div>
+                  <div class="dfc">
+                    <i class="bx bx-share-alt" style="color: #7c7e83"></i
+                    ><span class="text-black-50">share</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+		  <!-- 5 -->
+
+		  <div class="container">
+            <div class="row bg-white my-3 rounded-3 shadow d-flex flex-column">
+              <!-- header of post  -->
+              <div class="col dfb m">
+                <div class="d-flex">
+                  <img src="img/afzal.png " class="img-circle" alt="" />
+                  <p class="mx-3">
+                    <b>channel name</b> .
+                    <a href="" class="text-primary">Follow</a
+                    ><br /><!--name . -->
+                    time . <i class="bx bx-world" style="color: #606266"></i>
+                  </p>
+                </div>
+                <div>
+                  <i
+                    class="bx bx-dots-horizontal-rounded icon1"
+                    style="color: #606266"
+                  ></i>
+                  <i class="bx bx-x icon1" style="color: #606266"></i>
+                </div>
+              </div>
+              <!-- post  -->
+              <div class="col p-2 dfc mb-4">
+                <img src="img/me2.png" alt=""  style="width: 300px; height: 300px; object-fit: cover;">
+                <!-- <video src="" width="300px " height="300px"></video> -->
+              </div>
+
+              <div class="col" style="margin-top: -20px">
+                <div class="dfb">
+                  <div class="btn-group dropup">
+                    <img
+                      src="img/like.png"
+                      class="img-react dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    />
+                    <img
+                      src="img/laugh.png"
+                      style="margin: 0px -3px"
+                      class="img-react dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    />
+                    <img
+                      src="img/heart.png"
+                      class="img-react dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    />
+
+                    <ul
+                      class="dropdown-menu text-center bg-dark text-white-50 text-capitalize"
+                    >
+                      <li>Muhammad Afzal</li>
+                      <li>Muhammad Ali</li>
+                      <li>Chahat fateh ali khan</li>
+                      <li>mr.bean</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p>
+                      <a class="text-decoration-none text-black-50" href=""
+                        >number comment</a
+                      >
+                      <a class="text-decoration-none text-black-50" href=""
+                        >number shares</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <hr style="margin-top: -5px" />
+                <div class="icon dfc gap-4 position-relative">
+                  <div class="like-hover dfc">
+                    <i class="bx bx-like" style="color: #7c7e83"></i
+                    ><span class="text-black-50">like</span>
+                  </div>
+                  <div class="emoji bg-white border-0 rounded-pill">
+                    <iframe
+                      src="https://lottie.host/embed/8ea6d891-5054-437a-a3f0-ddeeac4025f8/p6QNLfouQt.json"
+                      style="margin-right: -20px"
+                      width="80px"
+                      height="80px"
+                    ></iframe>
+                    <iframe
+                      src="https://lottie.host/embed/ad52a6eb-e4ea-4ad5-a1f5-a24942f2fe0e/sPLF1vBVeN.json"
+                      width="70px"
+                      height="70px"
+                    ></iframe>
+                    <iframe
+                      src="https://lottie.host/embed/85f850b9-c7c5-4f18-9c37-8ba5286a77ef/7aXOuaVR67.json"
+                      width="45px"
+                      height="45px"
+                    ></iframe>
+                    <iframe
+                      src="https://lottie.host/embed/fb96d67f-d68d-4cad-a320-e595ce68ad82/2BxmyH0xkl.json"
+                      style="margin-left: 5px"
+                      width="55px"
+                      height="55px"
+                    ></iframe>
+                    <iframe
+                      src="https://lottie.host/embed/f67cca31-b79e-47c1-a985-576a65413dec/qEWBg8bJY9.json"
+                      style="
+                        margin-top: -20px;
+                        margin-right: -40px;
+                        margin-left: -20px;
+                      "
+                      width="80px"
+                      height="80px"
+                    ></iframe>
+                    <iframe
+                      src="https://lottie.host/embed/ea224abd-9c08-4d3d-8285-03ca16bbecf6/YoNa2hfAIq.json"
+                      width="90px"
+                      height="90px"
+                    ></iframe>
+                  </div>
+                  <div class="dfc">
+                    <i class="bx bx-comment" style="color: #7c7e83"></i
+                    ><span class="text-black-50">comment</span>
+                  </div>
+                  <div class="dfc">
+                    <i class="bx bxl-whatsapp" style="color: #7c7e83"></i
+                    ><span class="text-black-50">send</span>
+                  </div>
+                  <div class="dfc">
+                    <i class="bx bx-share-alt" style="color: #7c7e83"></i
+                    ><span class="text-black-50">share</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <!-- mid portion ended  -->
+        </div>
+
+        <!-- right side bar  -->
+        <div
+          class="col d-none justify-content-end d-md-flex"
+          style="margin-right: -20px; z-index: 10"
+        >
+          <!-- sponsored  -->
+          <div
+            class="col d-flex flex-column justify-content-start position-fixed p-3 h-100 gap-3 overflow-auto"
+            style="width: 300px; margin-top: -10px"
+          >
+            <h6 class="text-black-50">Sponsored</h6>
+            <div
+              class="leftside-bar d-flex align-items-center justify-content-start gap-3"
+            >
+              <img
+                src="img/sponserd 1.png"
+                width="150px"
+                height="150
+                0px"
+                class="rounded"
+                alt=""
+              />
+              <h6 class="mt-2">Web Developer
+                Muhammad Afzal</h6>
+            </div>
+
+            <div
+              class="leftside-bar d-flex align-items-center justify-content-start gap-3"
+            >
+              <img
+                src="img/sposored 2.png"
+                width="150px"
+                height="150px"
+                class="rounded"
+                alt=""
+              />
+              <h6 class="mt-2">Level Up Your Web Dev Skills  </h6>
+            </div>
+
+            <!-- Friend Requests -->
+
+            <h6 class="text-black-50">Friend Requests</h6>
+            <div class="leftside-bar dfs gap-3">
+              <div class="col d-flex flex-column">
+                <!-- profile pic of Friend request  -->
+                <img
+                  src="img/bill gates.jpeg"
+                  width="50px"
+                  height="50px"
+                  style="object-fit: cover;"
+
+                  class="rounded-circle"
+                  alt=""
+                />
+              </div>
+
+              <div
+                class="col d-flex flex-column justify-content-start align-items-start"
+              >
+                <b><span>Bill Gates</span></b>
+                <button type="button" class="btn btn-primary rounded-3 px-3">
+                  Confirm
+                </button>
+              </div>
+
+              <div
+                class="col d-flex flex-column justify-content-end align-items-center"
+              >
+                <span>10min</span>
+                <button
+                  type="button"
+                  style="background-color: #bcbcbc"
+                  class="btn rounded-3 px-3"
+                >
+                  Delete
+                </button>
+              </div>
+            </div>
+
+            <div class="leftside-bar dfs gap-3">
+              <div class="col d-flex flex-column">
+                <!-- profile pic of Friend request  -->
+                <img
+                  src="img/atif.jpeg"
+                  width="50px"
+                  height="50px"
+                  class="rounded-circle"
+                  alt=""
+                  style="object-fit: cover;"
+                />
+              </div>
+
+              <div
+                class="col d-flex flex-column justify-content-start align-items-start"
+              >
+                <b><span>Atif Aslam</span></b>
+                <button type="button" class="btn btn-primary rounded-3 px-3">
+                  Confirm
+                </button>
+              </div>
+
+              <div
+                class="col d-flex flex-column justify-content-end align-items-center"
+              >
+                <span>10min</span>
+                <button
+                  type="button"
+                  style="background-color: #bcbcbc"
+                  class="btn rounded-3 px-3"
+                >
+                  Delete
+                </button>
+              </div>
+            </div>
+
+            <h6 class="text-black-50">Contacts</h6>
+
+            <div
+              class="leftside-bar d-flex align-items-center justify-content-start gap-3 position-relative"
+            >
+              <img
+                src="img/farhan.jpg"
+                width="40px"
+                height="40px"
+                class="rounded-circle"
+                style="object-fit: cover;"
+
+                alt=""
+              />
+              <span
+                style="
+                  position: absolute;
+                  background-color: #31A24C;
+                  border: 2px solid white;
+
+                  top: 33px;
+                  left: 33px;
+                  width: 12px;
+                  height: 12px;
+                  border-radius: 50%;
+                "
+              >
+              </span>
+              <h6 class="mt-2">M.Farhan</h6>
+            </div>
+
+            <div
+              class="leftside-bar d-flex align-items-center justify-content-start gap-3 position-relative"
+            >
+              <img
+                src="img/Jawad Jeonseol.jpg"
+                width="40px"
+                height="40px"
+                style="object-fit: cover;"
+
+                class="rounded-circle"
+                alt=""
+              />
+              <span
+                style="
+                  position: absolute;
+                  background-color: #31A24C;
+                  border: 2px solid white;
+
+                  top: 33px;
+                  left: 33px;
+                  width: 12px;
+                  height: 12px;
+                  border-radius: 50%;
+                "
+              >
+              </span>
+              <h6 class="mt-2">Jawad Jeonseol</h6>
+            </div>
+
+            <div
+              class="leftside-bar d-flex align-items-center justify-content-start gap-3 position-relative"
+            >
+              <img
+                src="img/abdul wajid.jpg"
+                width="40px"
+                height="40px"
+                style="object-fit: cover;"
+                class="rounded-circle"
+                alt=""
+              />
+              <span
+                style="
+                  position: absolute;
+                  background-color: #31A24C;
+                  border: 2px solid white;
+
+                  top: 33px;
+                  left: 33px;
+                  width: 12px;
+                  height: 12px;
+                  border-radius: 50%;
+                "
+              >
+              </span>
+              <h6 class="mt-2">Abdul Wajid</h6>
+            </div>
+
+            <div
+              class="leftside-bar d-flex align-items-center justify-content-start gap-3 position-relative"
+            >
+              <img
+                src="img/anas.jpg"
+                width="40px"
+                height="40px"
+                style="object-fit: cover;"
+                class="rounded-circle"
+                alt=""
+              />
+              <span
+                style="
+                  position: absolute;
+                  background-color: #31A24C;
+                  border: 2px solid white;
+                  top: 33px;
+                  left: 33px;
+                  width: 12px;
+                  height: 12px;
+                  border-radius: 50%;
+                "
+              >
+              </span>
+              <h6 class="mt-2">Mee Anas</h6>
+            </div>
+
+            <div
+              class="leftside-bar d-flex align-items-center justify-content-start gap-3 position-relative"
+            >
+              <img
+                src="img/shahzaib.jpg"
+                width="40px"
+                height="40px"
+                class="rounded-circle"
+                style="object-fit: cover;"
+
+                alt=""
+              />
+              <span
+                style="
+                  position: absolute;
+                  background-color: #31A24C;
+                  border: 2px solid white;
+
+                  top: 33px;
+                  left: 33px;
+                  width: 12px;
+                  height: 12px;
+                  border-radius: 50%;
+                "
+              >
+              </span>
+              <h6 class="mt-2">Shahzaib Ahmed</h6>
+            </div>
+
+            <p>
+              Privacy · Terms · Advertising · Ad Choices · Cookies · Developed
+              by Afzal · Meta © 2024 <br /><br /><br /><br /><br />
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- bootstrap js  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
